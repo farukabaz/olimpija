@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { ShoppingCart } from '@material-ui/icons'
+import { IconButton, Badge } from '@material-ui/core'
 import './Navbar.css';
 
-function Navbar() {
+const  Navbar = ({totalItems}) => {
+  const location = useLocation();
+
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -54,11 +58,16 @@ function Navbar() {
                 KONTAKT
               </Link>
             </li>
-            <li className='nav-item'>
-              <Link to='/korpa' className='nav-links' onClick={closeMobileMenu}>
-                KORPA
-              </Link>
-            </li> 
+
+            { location.pathname === '/' && (
+              <div className='nav-item'>
+                <IconButton component={Link} to='/cart' aria-label='Show cart items' color='inherit'>
+                  <Badge badgeContent={totalItems} color='secondary'>
+                    <ShoppingCart/>
+                  </Badge>
+                </IconButton>
+              </div> ) }
+
           </ul>
           
         </div>

@@ -4,7 +4,7 @@ import {AiOutlineArrowLeft, AiOutlineArrowRight} from 'react-icons/ai'
 import './Hero.css'
 
 const HeroSection = styled.section`
-height: 100vh;
+height: 94vh;
 max-height: 1100px;
 position: relative; 
 overflow: hidden;
@@ -66,7 +66,8 @@ width: 50px;
 height: 50px;
 color: white;
 cursor: pointer;
-background: #000d1a;
+background: #4E6673;
+color: #F4DFAF;
 border-radius: 50px;
 padding: 10px;
 margin-right: 1rem;
@@ -74,7 +75,8 @@ user-select: none;
 transition: 0.3s;
 
 &:hover {
-    background: #cd853f;
+    background: #F4DFAF;
+    color: #4E6673;
     transform: scale(1.05);
 }
 `;
@@ -83,7 +85,8 @@ width: 50px;
 height: 50px;
 color: white;
 cursor: pointer;
-background: #000d1a;
+background: #4E6673;
+color: #F4DFAF;
 border-radius: 50px;
 padding: 10px;
 margin-right: 1rem;
@@ -91,7 +94,8 @@ user-select: none;
 transition: 0.3s;
 
 &:hover {
-    background: #cd853f;
+    background: #F4DFAF;
+    color: #4E6673;
     transform: scale(1.05);
 }
 `;

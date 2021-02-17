@@ -1,0 +1,67 @@
+.brands {
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #4E6673;
+    color: #F4DFAF;
+    opacity: 0.8;
+    font-family: 'Audiowide', cursive;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brands-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 24px;
+    padding: 24px;
+    height: 10vh;
+    width: 80vw;
+    background-color: #2B324A;
+    font-size: 2rem;
+}
+.brands-container {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+}
+.brands-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10vw;
+    list-style: none;
+    justify-content: center;
+    width: 100vw;
+}
+.brands-item {
+    font-size: 1.5vh;
+    border-radius: 50%;
+    background-color: lightgray;
+    height: 20vh;
+    width: 20vh;
+}
+.brands-logo {
+    height: 16vh;
+    width: 16vh;
+    margin: 2vh;
+}
+.brands-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}

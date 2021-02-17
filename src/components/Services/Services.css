@@ -1,0 +1,42 @@
+.services {
+    height: 6vh;
+    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #4E6673;
+  color: #F4DFAF;
+  opacity: 0.8;
+  font-family: 'Audiowide', cursive;
+  margin: auto;
+}
+.services-container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 90vw;
+}
+.services-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10vw;
+    list-style: none;
+    text-align: center;
+    width: 100vw;
+}
+.services-item {
+    font-size: 1.5vh;
+}
+.services-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}

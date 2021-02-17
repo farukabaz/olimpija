@@ -123,6 +123,8 @@ h5 {
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    margin: 0%;
+    height: 40vh;
   }
 
   .nav-menu.active {
@@ -131,6 +133,7 @@ h5 {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    width: 100%;
   }
 
   .nav-links {

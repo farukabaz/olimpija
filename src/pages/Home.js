@@ -8,6 +8,7 @@ import NewProducts from '../components/NewProducts/NewProducts';
 import OnSale from '../components/OnSale/OnSale';
 
 import { SliderData } from '../data/SliderData';
+import { ProductsData } from '../data/ProductsData';
 
 import GlobalStyle from '../globalStyles';
 
@@ -24,7 +25,7 @@ function Home() {
       <GlobalStyle/>
       <Navbar/>
       <Hero slides={SliderData}/> 
-      <NewProducts/>
+      <NewProducts products={ProductsData}/>
       <Brands/>
       <OnSale/>
       <Footer/>

@@ -42,6 +42,17 @@
     text-align: center;
     margin: 1.25%;
     border: 1px solid #BFBCBC;
+    text-decoration: none;
+}
+
+.product-card:hover{
+    background-color: white;
+    transition: 0.2s;
+}
+
+.product-card:hover .product-img{
+    width: 80%;
+    transition: 0.2s;
 }
 
 .male{
@@ -50,6 +61,27 @@
 
 .female{
     background-color: rgba(158, 94, 137, 0.15);
+}
+
+.card-not-available{
+    flex-wrap: wrap;
+}
+
+.overlay{
+    position: relative;
+    top: -65%;
+    height: 0;
+}
+.overlay h1{
+    font-size: 2vw;
+    color: #9A9A9A;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.perfume-type-icon{
+    padding: 0.6vw;
+    width: 2.5vw;
+    opacity: 0.5;
 }
 
 .product-img{

@@ -14,13 +14,22 @@ import { TopSellersData } from '../data/TopSellersData';
 
 import GlobalStyle from '../globalStyles';
 
-function Home() {
+import { useParams } from 'react-router-dom';
+
+
+function Product() {
+
+
 
   // Function for dropdown menu 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
+
+    
   };
+
+
 
   return (
     <>
@@ -36,4 +45,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Product;

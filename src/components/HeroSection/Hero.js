@@ -157,7 +157,7 @@ const Hero = ({slides}) => {
                                 <HeroSlider>
                                     <HeroImage src={slide.image} alt={slide.alt}/>
                                     <div className='center-image'>
-                                        <img alt='parfem' className='image' src={slide.parfemImg}/>
+                                        <img alt='parfem' className='parfem-image' src={slide.parfemImg}/>
                                     </div>
                                     <div className='hero-content'>
                                         <h2 style={{color: slide.titleColor}}>{slide.title}</h2>
@@ -177,4 +177,3 @@ const Hero = ({slides}) => {
 }
 
 export default Hero
-

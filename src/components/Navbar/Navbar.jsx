@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ShoppingCart } from '@material-ui/icons'
 import { IconButton, Badge } from '@material-ui/core'
 import './Navbar.css';
 
 const  Navbar = ({totalItems}) => {
-  const location = useLocation();
 
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -37,7 +36,7 @@ const  Navbar = ({totalItems}) => {
             className='logo'
             src='/images/logo.jpg'
             />
-            <div className="navbar-title-flex">
+            <div className="navbar-title">
               <div><h5>Parfimerija</h5></div>
               <div><h1>OLIMPIJA</h1></div>
             </div>
@@ -58,14 +57,13 @@ const  Navbar = ({totalItems}) => {
                 KONTAKT
               </Link>
             </li>
-              <div className='nav-item'>
-                <IconButton component={Link} to='/cart' aria-label='Show cart items' color='inherit'>
-                  <Badge badgeContent={totalItems} color='secondary'>
-                    <ShoppingCart/>
-                  </Badge>
-                </IconButton>
-              </div>
-
+            <div className='nav-item'>
+              <IconButton className='cart-icon' component={Link} to='/cart' aria-label='Show cart items'>
+                <Badge badgeContent={totalItems} color='secondary'>
+                  <ShoppingCart fontSize='large'/>
+                </Badge>
+              </IconButton>
+            </div> 
           </ul>
           
         </div>

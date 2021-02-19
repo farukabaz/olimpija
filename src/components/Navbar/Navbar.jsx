@@ -58,15 +58,13 @@ const  Navbar = ({totalItems}) => {
                 KONTAKT
               </Link>
             </li>
-
-            { location.pathname === '/' && (
               <div className='nav-item'>
                 <IconButton component={Link} to='/cart' aria-label='Show cart items' color='inherit'>
                   <Badge badgeContent={totalItems} color='secondary'>
                     <ShoppingCart/>
                   </Badge>
                 </IconButton>
-              </div> ) }
+              </div>
 
           </ul>
           

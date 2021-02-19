@@ -14,7 +14,12 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/product' component={Product} />
+          <Route
+            path='/product'
+            render={(props) => (
+              <Product {...props} />
+            )}
+          />
           <Route path='/katalog' component={Katalog} />
           <Route path='/kontakt' component={Kontakt} />
           <Route path='/korpa' component={Korpa} />

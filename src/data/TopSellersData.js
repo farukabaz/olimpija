@@ -19,7 +19,7 @@ export const TopSellersData = [
         price: 12.45,
         sex: 'male',
         type: PerfumeTypeWoody,
-        quantity: 5
+        quantity: 0
     },
     {
         title: "Rouzi Kryst Beauty",

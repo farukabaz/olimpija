@@ -1,0 +1,15 @@
+.header-card-row{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 20vw;
+    width: 17.5%;
+    margin: 1.25%;
+}
+
+.bottom-right-header {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2vw;
+    font-family: 'Gruppo', cursive;
+    margin: 8%;
+}

@@ -1,0 +1,98 @@
+.product-card{
+    height: 20vw;
+    width: 17.5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.25%;
+    border: 1px solid #BFBCBC;
+    text-decoration: none;
+}
+
+.product-card:hover{
+    background-color: white;
+    transition: 0.2s;
+}
+
+.product-card:hover .product-img{
+    width: 80%;
+    transition: 0.2s;
+}
+
+.male{
+    background-color: rgba(94, 138, 158, 0.15);
+}
+
+.female{
+    background-color: rgba(158, 94, 137, 0.15);
+}
+
+.card-not-available{
+    flex-wrap: wrap;
+}
+
+.overlay{
+    position: relative;
+    top: -65%;
+    height: 0;
+}
+.overlay h1{
+    font-size: 2vw;
+    color: #9A9A9A;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.perfume-type-icon{
+    padding: 0.6vw;
+    width: 2.5vw;
+    opacity: 0.5;
+}
+
+.product-img{
+    opacity: 1;
+    width: 70%;
+    margin: auto;
+}
+
+.product-card h2,h3,h4 {
+    margin: 0;
+}
+
+.product-card h2{
+    font-family: 'Antic', sans-serif;
+    font-size: 1vw;
+    margin: 0 5% auto 0;
+    color: #000000;
+}
+
+.product-card h3{
+    font-family: 'Audiowide', cursive;
+    font-size: 1.2vw;
+    margin-bottom: 8%;
+    color: #583E3A;
+}
+
+.product-card h4{
+    font-family: 'Antic', sans-serif;
+    font-size: 0.8vw;
+    text-decoration: line-through;
+    color: #A4A4A4;
+}
+
+/* HEADER CARD */
+
+.header-card-row{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 20vw;
+    width: 17.5%;
+    margin: 1.25%;
+}
+
+.bottom-right-header {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2vw;
+    font-family: 'Gruppo', cursive;
+    margin: 8%;
+}

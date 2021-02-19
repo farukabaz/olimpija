@@ -30,7 +30,7 @@ export const ProductsData = [
         price: 12.45,
         sex: 'female',
         type: PerfumeTypeFloral,
-        quantity: 5
+        quantity: 100
     },
     {
         id: 3,

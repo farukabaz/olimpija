@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 
-import Brands from '../components/Brands/Brands';
 import Footer from '../components/Footer/Footer';
 import Hero from '../components/HeroSection/Hero';
 import Navbar from '../components/Navbar/Navbar';
@@ -10,6 +9,9 @@ import Services from '../components/Services/Services';
 
 import { SliderData } from '../data/SliderData';
 import { ProductsData } from '../data/ProductsData';
+
+import Brands from '../components/Brands/Brands'
+import { BrandsData } from '../data/BrandsData';
 
 import GlobalStyle from '../globalStyles';
 
@@ -28,7 +30,7 @@ function Home() {
       <Hero slides={SliderData}/>
       <Services/>
       <NewProducts products={ProductsData}/>
-      <Brands/>
+      <Brands slides={BrandsData}/>
       <OnSale/>
       <Footer/>
     </>

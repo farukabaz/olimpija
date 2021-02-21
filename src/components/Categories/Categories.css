@@ -1,0 +1,125 @@
+.brands {
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #4E6673;
+    color: #F4DFAF;
+    opacity: 0.8;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brands-name-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 24px;
+    padding: 24px;
+    height: 10vh;
+    width: 80vw;
+    background-color: #f2f2f2;
+    color: #858585;
+    font-size: 2rem;
+    font-family: 'Audiowide', cursive;
+}
+.brands-container {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.brands-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 3vw;
+    list-style: none;
+    justify-content: center;
+    width: 100vw;
+    height: 25vh;
+}
+.brands-item {
+    font-size: 1.5vh;
+    border-radius: 50%;
+    background-color: lightgray;
+    height: 18vh;
+    width: 18vh;
+    margin: 3.5vh;
+}
+.brands-logo {
+    height: 14vh;
+    width: 14vh;
+    margin: 2vh;
+}
+.brands-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+
+
+
+.slider {
+    position: relative;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    width: 100vw;
+    height: 20vh;
+    border-radius: 10px;
+  }
+  .right-arrow {
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    font-size: 3rem;
+    color: #2B3249;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  .right-arrow:hover {
+    color: #F4DFAF;
+    transform: scale(1.05);
+  }
+  .left-arrow {
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    font-size: 3rem;
+    color: #2B3249;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  .left-arrow:hover {
+    color: #F4DFAF;
+    transform: scale(1.05);
+  }
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  }
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }

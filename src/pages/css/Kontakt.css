@@ -1,0 +1,22 @@
+.kontakt{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: space-around;
+    padding: 0 15vw;
+    background: rgb(220,220,220);
+    background: linear-gradient(180deg, rgba(220,220,220,1) 0%, rgba(113,133,143,0.9) 100%);
+    color: white;
+}
+
+.kontakt-img{
+    width: 30vw;
+    margin: auto 0;
+}
+.kontakt-img img{
+    border-radius: 50%;
+}
+
+.kontakt-desc{
+    margin: auto 0;
+}

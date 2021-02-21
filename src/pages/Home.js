@@ -31,9 +31,9 @@ function Home() {
       <Navbar/>
       <Hero slides={SliderData}/>
       <Services/>
-      <NewProducts products={ProductsData}/>
+      <NewProducts topTitle={"NOVO U"} bottomTitle={"PONUDI"} products={ProductsData}/>
       <Brands slides={BrandsData}/>
-      <OnSale products={TopSellersData}/>
+      <OnSale topTitle={"TOP"} bottomTitle={"SELLERS"} products={TopSellersData}/>
       <Footer/>
     </>
   );

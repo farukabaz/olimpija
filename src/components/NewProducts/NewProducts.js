@@ -8,7 +8,7 @@ import ProductCard from '../ProductCard/ProductCard';
 import HeaderCard from '../ProductCard/HeaderCard';
 import ModalItem from '../ModalItem/ModalItem';
 
-const NewProducts = ({products}) => {
+const NewProducts = ({topTitle, bottomTitle, products}) => {
     const [count, setCount] = useState(0);
 
     const increaseCount = () => setCount(count + 1);
@@ -29,12 +29,12 @@ const NewProducts = ({products}) => {
         <div id="newProducts" className="products">
             <div className="products-all">
 
-                <HeaderCard topText="NOVO U" bottomText="PONUDI"/>
+                <HeaderCard topText={topTitle} bottomText={bottomTitle}/>
                 {products.map((product) => <ProductCard key={product.id.toString()} onClick={clickedOnProductCard} value={product} />)}
                 {/* {products.map((product) => { return(<ProductCard onClick={clickedOnProductCard} product={product}/>) })} */}
                 <Modal classNames={{ overlay: 'customOverlay',modal: 'customModal', closeButton: 'closeButton',}} open={open} onClose={onCloseModal} center>
                     <ModalItem product={product} decreaseCount={decreaseCount} increaseCount={increaseCount} count={count}/>
-                </Modal>  
+                </Modal>
 
             </div>
         </div>

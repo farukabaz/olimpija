@@ -43,3 +43,12 @@ h2 {
     font-family: 'Antic', sans-serif;
     font-size: 2vw;
 }
+
+.alert-enter {
+    opacity: 0;
+  }
+  .alert-enter-active {
+    opacity: 1;
+    transition: opacity 800ms, transform 800ms;
+  }
+

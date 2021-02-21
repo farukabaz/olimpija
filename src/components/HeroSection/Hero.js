@@ -2,12 +2,15 @@ import React, {useEffect, useState, useRef} from 'react'
 import styled from 'styled-components/macro'
 import {AiOutlineArrowLeft, AiOutlineArrowRight} from 'react-icons/ai'
 import './Hero.css'
+import { CSSTransition } from 'react-transition-group';
+
 
 const HeroSection = styled.section`
 height: 94vh;
 max-height: 1100px;
 position: relative; 
 overflow: hidden;
+background-color: black;
 `;
 const HeroWrapper = styled.div`
 width: 100%;
@@ -104,14 +107,19 @@ const Hero = ({slides}) => {
 
 
     // Setting up function with arrows to go to next and previous slide
+    const [isChanging, setIsChanging] = useState(false)
     const [current, setCurrent] = useState(0)
     const length = slides.length
     const timeout = useRef(null)
 
+    const stopChanging = () => setIsChanging(false);
+
     // Use automatic slide effect 
     useEffect(() => {
         const nextSlide = () => {
+            setIsChanging(true);
             setCurrent(current => (current === length - 1 ? 0 : current + 1))
+            
         }
         // Time for which slide will change to next
         timeout.current = setTimeout(nextSlide, 3000)
@@ -127,8 +135,9 @@ const Hero = ({slides}) => {
         if (timeout.current) {
             clearTimeout(timeout.current);
         }
-
-        setCurrent(current === length - 1 ? 0 : current + 1)
+        setIsChanging(true);
+        setCurrent(current === length - 1 ? 0 : current + 1);
+        
     }
 
     // Function for prev slide
@@ -136,8 +145,9 @@ const Hero = ({slides}) => {
         if (timeout.current) {
             clearTimeout(timeout.current);
         }
-
-        setCurrent(current === 0 ? length - 1 : current - 1)
+        setIsChanging(true);
+        setCurrent(current === 0 ? length - 1 : current - 1);
+        
     }
 
     // If there is no data or some error it should work (just in case)
@@ -147,22 +157,27 @@ const Hero = ({slides}) => {
 
     return (
         <HeroSection>
+            <CSSTransition in={isChanging} timeout={500} classNames="alert" onEntered={stopChanging}>
             <HeroWrapper>
                 {slides.map((slide, index) => {
                     return (
-                        <HeroSlide key={index}>
-                            {index === current && (
-                                <HeroSlider>
-                                    <HeroImage src={slide.image} alt={slide.alt}/>
-                                    <div className='center-image'>
-                                        <img alt='parfem' className='parfem-image' src={slide.parfemImg}/>
-                                    </div>
-                                    <div className='hero-content'>
-                                        <h2 style={{color: slide.titleColor}}>{slide.title}</h2>
-                                    </div>
-                                </HeroSlider>
-                            )} 
-                        </HeroSlide>
+                        
+                            <HeroSlide key={index}>
+                                {index === current && (
+                                    
+                                    <HeroSlider>
+                                        <HeroImage src={slide.image} alt={slide.alt}/>
+                                        <div className='center-image'>
+                                            <img alt='parfem' className='parfem-image' src={slide.parfemImg}/>
+                                        </div>
+                                        <div className='hero-content'>
+                                            <h2 style={{color: slide.titleColor}}>{slide.title}</h2>
+                                        </div>
+                                    </HeroSlider>
+                                    
+                                )} 
+                            </HeroSlide>
+                        
                     )
                 })}
                 <SliderButtons>
@@ -170,6 +185,7 @@ const Hero = ({slides}) => {
                     <NextArrow onClick={nextSlide}/>
                 </SliderButtons>
             </HeroWrapper>
+            </CSSTransition>
         </HeroSection>
     )
 }

@@ -12,6 +12,7 @@
 .product-card:hover{
     background-color: white;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .product-card:hover .product-img{

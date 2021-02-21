@@ -17,3 +17,18 @@
     justify-content: left;
     background-color: #F2F2F2;
 }
+
+/* MODAL */
+
+.customOverlay {
+    color: white;
+  }
+.customModal {
+    max-width: 60vw !important;
+    width: 100%;
+    border-radius: 2vw;
+    background-color:rgba(0, 0, 0, 0.5) !important;
+  }
+.closeButton {
+    fill: #F6E5BF;
+}

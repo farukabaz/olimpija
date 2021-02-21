@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {BrandsData} from './BrandsData'
 import {AiOutlineArrowLeft, AiOutlineArrowRight} from 'react-icons/ai'
 
 import './Brands.css'
@@ -39,16 +38,16 @@ const Brands = ({slides}) => {
                                 <div className='brands-container'>
                                     <ul className='brands-menu'>
                                         <li className='brands-item'>
-                                            <img src={slide.brandImageOne} className='brands-logo' alt='Image Error'/>
+                                            <img src={slide.brandImageOne} className='brands-logo' alt='Loading Error'/>
                                         </li>
                                         <li className='brands-item'>
-                                            <img src={slide.brandImageTwo} className='brands-logo' alt='Image Error'/>
+                                            <img src={slide.brandImageTwo} className='brands-logo' alt='Loading Error'/>
                                         </li>
                                         <li className='brands-item'>
-                                            <img src={slide.brandImageThree} className='brands-logo' alt='Image Error'/>
+                                            <img src={slide.brandImageThree} className='brands-logo' alt='Loading Error'/>
                                         </li>
                                         <li className='brands-item'>
-                                            <img src={slide.brandImageFour} className='brands-logo' alt='Image Error'/>
+                                            <img src={slide.brandImageFour} className='brands-logo' alt='Loading Error'/>
                                         </li>
                                     </ul>
                                 </div>

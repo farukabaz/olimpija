@@ -129,7 +129,6 @@ const Hero = ({slides}) => {
         }
 
         setCurrent(current === length - 1 ? 0 : current + 1)
-        console.log(current)
     }
 
     // Function for prev slide
@@ -139,7 +138,6 @@ const Hero = ({slides}) => {
         }
 
         setCurrent(current === 0 ? length - 1 : current - 1)
-        console.log(current)
     }
 
     // If there is no data or some error it should work (just in case)

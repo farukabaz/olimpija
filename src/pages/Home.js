@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import Footer from '../components/Footer/Footer';
 import Hero from '../components/HeroSection/Hero';
@@ -18,11 +18,12 @@ import GlobalStyle from '../globalStyles';
 
 function Home() {
 
+  // if enabled add: import React, {useState} from 'react';
   // Function for dropdown menu 
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const [isOpen, setIsOpen] = useState(false);
+  // const toggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
   return (
     <>

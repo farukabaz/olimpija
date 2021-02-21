@@ -9,27 +9,27 @@ const Services = () => {
             <div className='services-container'>
             <ul className='services-menu'>
                 <li className='services-item'>
-                    <a>
+                    <span>
                         <FaTruck/>
-                    </a>
+                    </span>
                     Dostava u roku 24h
                 </li>
                 <li className='services-item'>
-                    <a>
+                    <span>
                         <FaMoneyBillAlt/>
-                    </a>
+                    </span>
                     Plaćanje pouzećem
                 </li>
                 <li className='services-item'>
-                    <a>
+                    <span>
                         <GoPackage/>
-                    </a>
+                    </span>
                     Mogućnost otvaranja paketa prije plaćanja 
                 </li>
                 <li className='services-item'>
-                    <a>
+                    <span>
                         <FaMedal/>
-                    </a>
+                    </span>
                     Originalni testeri
                 </li>
             </ul>

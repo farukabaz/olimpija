@@ -13,24 +13,27 @@ import PerfumeTypeFresh from '../icons/wind.svg'
 
 export const TopSellersData = [
     {
+        id: 1,
         title: "Dolce & Gabbana The Only One",
         parfemImg: PerfumeImageOne,
         oldPrice: 15.45,
         price: 12.45,
         sex: 'male',
         type: PerfumeTypeWoody,
-        quantity: 0
+        quantity: 5
     },
     {
+        id: 2,
         title: "Rouzi Kryst Beauty",
         parfemImg: PerfumeImageTwo,
         oldPrice: 15.45,
         price: 12.45,
         sex: 'female',
         type: PerfumeTypeFloral,
-        quantity: 5
+        quantity: 100
     },
     {
+        id: 3,
         title: "JuJu Dior Klementine",
         parfemImg: PerfumeImageThree,
         oldPrice: 15.45,
@@ -40,6 +43,7 @@ export const TopSellersData = [
         quantity: 5
     },
     {
+        id: 4,
         title: "Gold Digger Vice",
         parfemImg: PerfumeImageFour,
         oldPrice: 15.45,
@@ -49,6 +53,7 @@ export const TopSellersData = [
         quantity: 5
     },
     {
+        id: 5,
         title: "Rouzi Kryst Beauty",
         parfemImg: PerfumeImageTwo,
         oldPrice: 15.45,
@@ -58,6 +63,7 @@ export const TopSellersData = [
         quantity: 5
     },
     {
+        id: 6,
         title: "JuJu Dior Klementine",
         parfemImg: PerfumeImageThree,
         oldPrice: 15.45,
@@ -67,6 +73,7 @@ export const TopSellersData = [
         quantity: 0
     },
     {
+        id: 7,
         title: "Gold Digger Vice",
         parfemImg: PerfumeImageFour,
         oldPrice: 15.45,
@@ -76,6 +83,7 @@ export const TopSellersData = [
         quantity: 5
     },
     {
+        id: 8,
         title: "Gold Digger Vice",
         parfemImg: PerfumeImageFour,
         oldPrice: 15.45,
@@ -85,6 +93,7 @@ export const TopSellersData = [
         quantity: 0
     },
     {
+        id: 9,
         title: "Gold Digger Vice",
         parfemImg: PerfumeImageFour,
         oldPrice: 15.45,

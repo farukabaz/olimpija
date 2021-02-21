@@ -36,7 +36,11 @@
     height: 2vh;
     margin: 2vh;
 }
-.services-item > a {
+.services-item > span {
   font-size: 1.7vh;
   margin-right: 10px;
 }
+/* .services-item > a {
+  font-size: 1.7vh;
+  margin-right: 10px;
+} */

@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+//import { HashLink } from 'react-router-hash-link';
 import './ProductCard.css';
 
-const ProductCard = ({product}) => {
+const ProductCard = ({value, onClick}) => {
+
+    let product = value;
 
     if (product.quantity > 0 ){
         return(
-            <div className={'product-card ' + product.sex }>
+            <div onClick={() => onClick(product)} className={'product-card ' + product.sex }>     
                 <img className="perfume-type-icon" src={product.type} alt="F"/>
                 <img alt='parfem' className='product-img' src={product.parfemImg}/>
                 <h2>{product.title}</h2>

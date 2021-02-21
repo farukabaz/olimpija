@@ -7,7 +7,9 @@ import './Navbar.css';
 const  Navbar = ({totalItems}) => {
 
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+
+  // const [button, setButton] = useState(true); change line below to this if you want to use button variable
+  const [, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -35,6 +37,7 @@ const  Navbar = ({totalItems}) => {
             <img 
             className='logo'
             src='/images/logo.jpg'
+            alt = 'Loading Error'
             />
             <div className="navbar-title">
               <div><h5>Parfimerija</h5></div>
